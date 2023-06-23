@@ -15,6 +15,7 @@ Include all of the typical stuff that you’ll find on the home page of a busine
 * {
     font-family: sans-serif;
     line-height: 1.6rem;
+    background-color: rgba(254,217,201,1.00);
   }
   
   body {
@@ -23,10 +24,11 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     line-height: 1.6;
     letter-spacing: 0.01em;
     color: black;
+
+
   }
   
   header {
-    background-color: salmon;
     margin-bottom: 2rem;
     width: 90%;
     padding: 1rem;
@@ -165,8 +167,9 @@ Include all of the typical stuff that you’ll find on the home page of a busine
   }
   footer {
     min-height: 200px;
-    background-color: #ddd;
+    background-color: rgba(254,217,201,1.00);
     max-width: 90%;
+    padding: 10px;
   }
   footer .column {
     font-family: sans-serif;
@@ -177,10 +180,12 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     width: 30%;
     float: left;
     text-decoration: none;
+    background-color: rgba(254,217,201,1.00);
     
   }
 .column {
 text-decoration: none;
+
 }
 ul li {
 
