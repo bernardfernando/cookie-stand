@@ -15,19 +15,17 @@
         <h2>Sales  analysis</h2>
       
 
-    
-
-    <div id = "cookieStand">
-      
+    <div id = "containerT">
+    <table id = "cookieStand"></table>
     </div>
 
    
-   
-    <form>
+   <div class="form-container">
+    <form id = "new-store-form">
       <fieldset>
         <legend>New Store form</legend>
         <label for="nameInput">Name</label>
-        <input type="text" id="nameInput" name = "name-input" placeholder="Enter Store Name">
+        <input type="text" id="name" name = "name-input" placeholder="Enter Store Name">
 
         <label for="minCustomersPerHour">Minimum Customers PerHour</label>
         <input type="text" id=minCustomersPerHour name = "minCustomersPerHour" placeholder= "Enter Minimum Customers Per Hour">
@@ -37,9 +35,10 @@
 
         <label for="averageCookiesPerHour">Average Cookies Per Hour</label>
         <input type="text" id="averageCookiesPerHour" name="averageCookiesPerHour" placeholder="Enter average cookies per hour">
+        <button id ="submit-button" type ="submit">Submit</button>
       </fieldset>
     </form>
- 
+  </div>
 </main>
 
 <footer>

@@ -122,10 +122,12 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     border-collapse: collapse;
     white-space: nowrap;
     padding: 0.25rem;
+    text-align: right;
+   
   }
 
   
-  tr td:first-child {
+  tr td:first-child, tr td:last-child {
     font-weight: bold;
   }
 
@@ -197,4 +199,22 @@ a:hover {
 
     background-color: rgb(221, 76, 100);
 
+}
+
+button[type="submit"] {
+  background-color: salmon;
+  border: none;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  margin-top: 2rem;
+}
+
+input[type=text] {
+  padding: 12px 20px;
+  box-sizing: border-box;
+  border:1px solid salmon;
+  border-radius:4px;
+  font-size: 1.6;
+  font-weight: 500;
+    
 }

@@ -1,6 +1,8 @@
 "use strict";
 console.log("it is working");
 
+const newStoreForm = document.getElementById("new-store-form");
+
 //random numbers 
 function randomNum(min, max) {
     return Math.floor(Math.random() * (max - min + 1) + min);
@@ -8,7 +10,12 @@ function randomNum(min, max) {
 
 const hours = ["6am", "7am", "8am", "9am", "10am", "11am", "12pm", "1pm", "2pm", "3pm", "4pm", "5pm", "6pm", "7pm"];
 
+// an array for stores when created to push
+const allStores = [];
+
 /*storeDetails = [["Seatle",23,65,6.3], ["Tokyo",3,24,1.2],["Dubai",11,38,3.7],["Paris",20,38,2.3],["Lima",2,16,4.6]];*/
+
+
 
 function CookieStore(storeName, minCustomersPerHour, maxCustomersPerHour, averageCookiesPerHour ) {
   this.storeName = storeName;
@@ -18,6 +25,7 @@ function CookieStore(storeName, minCustomersPerHour, maxCustomersPerHour, averag
   this.customersEachHour = [];
   this.cookiesEachHour = [];
   this.totalDailyCookies = 0;
+  this.pushStore();
   this.render();
 }
 
@@ -32,7 +40,29 @@ const table = document.createElement("table");
 
   //connect this table to page
   cookieStand.appendChild(table);
+ // const trr =document.createElement("tr");
+  //table.appendChild(trr);
+  // table header row
 
+  function headerRow() {
+    const tr = document.createElement("tr");
+    const th = document.createElement("th");
+    th.textContent = "Store Location";
+    tr.appendChild(th)
+
+    for(let i=0; i< hours.length; i++) {
+      const th = document.createElement("th");
+      th.textContent = hours[i];
+      tr.appendChild(th)
+    }
+    const storeTotalHeaderCell = document.createElement("th");
+    storeTotalHeaderCell.textContent = "Store Daily Total";
+    tr.appendChild(storeTotalHeaderCell);
+    table.appendChild(tr);
+  }
+
+  headerRow();
+/*
   // create table row
   const trow = document.createElement("tr"); 
   table.appendChild(trow);
@@ -45,6 +75,8 @@ const table = document.createElement("table");
     trow.appendChild(td)
 
   }
+
+*/
 
 
 //calc customers each hour
@@ -64,6 +96,11 @@ CookieStore.prototype.calcCookiesEachHour = function () {
         this.cookiesEachHour.push(oneHourCookies);
         this.totalDailyCookies +=oneHourCookies;
     }
+};
+
+// prototype method to push a new instance of Cookie store in the all store array as it is created
+CookieStore.prototype.pushStore = function (){
+  allStores.push(this);
 };
 
 // render figures to tables
@@ -91,8 +128,60 @@ CookieStore.prototype.render = function () {
 }
 
  
-const seatle = new CookieStore("seatle",23,65,6.3)
-const tokyo = new CookieStore("Tokyo",3,24,1.2)
-const dubai = new CookieStore("Dubai",11,38,3.7)
-const paris = new CookieStore("Paris",20,38,2.3)
-const lima = new CookieStore("Lima",2,16,4.6)
+const seatle = new CookieStore("seatle",23,65,6.3);
+const tokyo = new CookieStore("Tokyo",3,24,1.2);
+const dubai = new CookieStore("Dubai",11,38,3.7);
+const paris = new CookieStore("Paris",20,38,2.3);
+const lima = new CookieStore("Lima",2,16,4.6);
+
+
+// hourly totals - to remain under the above 5 stores
+function hourlyTotal () {
+  const tr = document.createElement("tr");
+  const th = document.createElement("th");
+  th.textContent = "Hourly Totals";
+  tr.appendChild(th)
+
+  for (let i = 0; i<hours.length; i++){
+    const th = document.createElement("th");
+    let hourlyTotals = 0;
+    for(let j=0; j<allStores.length; j++){
+      const hourlyAmount = allStores[j].cookiesEachHour[i];
+      hourlyTotals +=hourlyAmount;
+    }
+    th.textContent = hourlyTotals;
+    tr.appendChild(th);
+  }
+ let totalTotal = 0;
+  for (let i = 0; i<allStores.length; i++){
+    totalTotal +=allStores[i].totalDailyCookies;
+  }
+const totalTotalCell = document.createElement("th");
+totalTotalCell.textContent = totalTotal;
+tr.appendChild(totalTotalCell);
+table.appendChild(tr);
+}
+hourlyTotal();
+
+//Form creation
+
+newStoreForm.addEventListener("submit", function (event) {
+event.preventDefault();
+table.innerHTML = "";
+headerRow();
+
+for(let i = 0; i < allStores.length; i++) {
+  allStores[i].render();
+}
+
+const storeNameInput = event.target.name.value;
+const minCustomersPerHourInput = event.target.minCustomersPerHour.value;
+const maxCustomersPerHourInput = event.target.maxCustomersPerHour.value;
+const averageCookiesPerHourInput = event.target.averageCookiesPerHour.value;
+
+const store = new CookieStore(storeNameInput, minCustomersPerHourInput,maxCustomersPerHourInput,averageCookiesPerHourInput);
+hourlyTotal()
+newStoreForm.reset();
+
+}
+)
