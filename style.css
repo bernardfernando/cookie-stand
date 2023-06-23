@@ -1,0 +1,195 @@
+
+/* A custom sans-serif Google Font for use in heading tags (<h# />)
+
+A specified standard sans-serif web font for sales data (such as Arial, Verdana, or Helvetica).
+A specified standard serif web font for text (such as Georgia, Times).
+Specified different font colors for all three font uses.
+A background color for the default page background (make sure font colors have good contrast and are readable on this background).
+A different background color for elements such boxes and tables (so make sure the font colors contrast against this well, too!).
+Anything else you’d like to add related to style. But remember: simplicity, clarity, and consistency are good things in design.
+Be thoughtful about layout and overall organization of the page.
+Run a Lighthouse Accessibility report. In this module, push to achieve a score between 65-80. Add the screenshot of your score to your README.md.
+Include all of the typical stuff that you’ll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user.*/
+
+
+* {
+    font-family: sans-serif;
+    line-height: 1.6rem;
+  }
+  
+  body {
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.6;
+    letter-spacing: 0.01em;
+    color: black;
+  }
+  
+  header {
+    background-color: salmon;
+    margin-bottom: 2rem;
+    width: 90%;
+    padding: 1rem;
+  }
+  
+  img {
+    display:block;
+  }
+  
+  .container_common1{
+  width: 90%;
+  max-width: 960px;
+  margin: 0 auto;
+  
+  
+    }
+  
+    .container_header{
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+    padding:2rem;
+  }
+  
+  main {
+    margin: 1rem;
+    
+  }
+  
+  .container_main {
+  
+    align-items: center;
+  }
+
+  
+  nav ul {
+  display: flex;
+  justify-content:flex-start;
+  text-decoration: darkturquoise
+  none;
+
+  }
+  
+  nav li {
+    margin-left: 3rem;
+    text-decoration: none;
+    list-style-type: none;
+    font-size: 1rem;
+  }
+  
+  li a {
+    text-decoration: none;
+    color: inherit;
+  }
+  
+  .horizontal_3_images {
+      display: flex;
+      justify-content: space-between;
+      margin-bottom: 1rem ;
+      margin-top:1rem;
+    
+    }
+  
+  
+  
+  
+  .image_text_sidebyside {
+  display: flex;
+  gap: 1rem;
+  }
+  
+  .text_on_right {
+  max-height: 450px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  
+  }
+  h3 {
+    font-size: 2rem;
+    font-weight: 600;
+  }
+  
+  .text_on_right p {
+    max-height: 400px;
+    overflow-y: scroll;
+  }
+
+  table, th, tr, td {
+    border: 1px solid salmon;
+    border-collapse: collapse;
+    white-space: nowrap;
+    padding: 0.25rem;
+  }
+
+  
+  tr td:first-child {
+    font-weight: bold;
+  }
+
+ td {
+
+    width: 4rem;
+  }
+
+  tr:first-child {
+    font-weight: bold;
+  }
+
+  form {
+    border: 1px solid salmon;
+    width: 50%;
+    display: flex;
+    margin-top: 2rem;
+    justify-content: flex-start;
+    flex-direction: column;
+  }
+
+
+  fieldset {
+    border: 1px salmon;
+    font-size: 1rem;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    
+  }
+
+  fieldset-input {
+    width: 50%;
+
+  }
+  fieldset legend {
+
+    font-size: 1.6rem;
+  }
+  footer {
+    min-height: 200px;
+    background-color: #ddd;
+    max-width: 90%;
+  }
+  footer .column {
+    font-family: sans-serif;
+    color: black;
+    display: flex;
+    justify-content: space-around;
+    box-direction:initial;
+    width: 30%;
+    float: left;
+    text-decoration: none;
+    
+  }
+.column {
+text-decoration: none;
+}
+ul li {
+
+    text-decoration: none;
+    list-style-type: none;
+}
+ 
+a:hover {
+
+    background-color: rgb(221, 76, 100);
+
+}

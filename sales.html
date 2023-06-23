@@ -3,26 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cookie Stand</title>
+    <title>Document</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <main>
+  <header>
+        <h1>Cookie Stand</h1>
+  </header>
 
-    </main>
-    <footer></footer>
+  <main>
+        <h2>Sales  analysis</h2>
+      
+
+    
+
+    <div id = "cookieStand">
+      
+    </div>
+
    
-   <div id="containerSeattle"></div>
-  <script src="sales.js"></script>
+   
+    <form>
+      <fieldset>
+        <legend>New Store form</legend>
+        <label for="nameInput">Name</label>
+        <input type="text" id="nameInput" name = "name-input" placeholder="Enter Store Name">
 
-<div class ="containerTokyo"></div>
+        <label for="minCustomersPerHour">Minimum Customers PerHour</label>
+        <input type="text" id=minCustomersPerHour name = "minCustomersPerHour" placeholder= "Enter Minimum Customers Per Hour">
 
+        <label for="maxCustomersPerHour">Maximum Customers Per Hours</label>
+        <input type="text" id="maxCustomersPerHour" name="maxCustomersPerHour" placeholder="Enter Maximum Customers Per hour">
 
-<div class ="containerDubai"></div>
-<div id="containerSeattle"></div>
-  <div class ="containerParis"></div>
-  <div id="containerSeattle"></div>
-  <div class ="containerLima"></div>
-  <div id="containerSeattle"></div>
+        <label for="averageCookiesPerHour">Average Cookies Per Hour</label>
+        <input type="text" id="averageCookiesPerHour" name="averageCookiesPerHour" placeholder="Enter average cookies per hour">
+      </fieldset>
+    </form>
+ 
+</main>
+
+<footer>
+    </footer>
+    <script src="sales.js"></script>
 </body>
+
 </html>
