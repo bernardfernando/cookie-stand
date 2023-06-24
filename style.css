@@ -28,12 +28,16 @@ Include all of the typical stuff that you’ll find on the home page of a busine
 
   }
   
-  header {
-    margin-bottom: 2rem;
+  header h1 {
+    margin-bottom: 0;
     width: 90%;
-    padding: 1rem;
+    font-family: 'pacifico', cursive;
+    padding-left: 2rem;
+    color: rgba(226,101,101,100);
   }
   
+
+
   img {
     display:block;
   }
@@ -50,7 +54,7 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     display: flex;
     justify-content: space-between;
     align-items: centre;
-    padding:2rem;
+    padding:0rem;
   }
   
   main {
@@ -67,9 +71,8 @@ Include all of the typical stuff that you’ll find on the home page of a busine
   nav ul {
   display: flex;
   justify-content:flex-start;
-  text-decoration: darkturquoise
-  none;
-
+  text-decoration: none;
+  
   }
   
   nav li {
@@ -77,6 +80,7 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     text-decoration: none;
     list-style-type: none;
     font-size: 1rem;
+    display: flex ;
   }
   
   li a {
@@ -91,8 +95,6 @@ Include all of the typical stuff that you’ll find on the home page of a busine
       margin-top:1rem;
     
     }
-  
-  
   
   
   .image_text_sidebyside {
@@ -123,7 +125,7 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     white-space: nowrap;
     padding: 0.25rem;
     text-align: right;
-   
+   font-family: Arial, Helvetica, sans-serif;
   }
 
   
@@ -171,28 +173,26 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     min-height: 200px;
     background-color: rgba(254,217,201,1.00);
     max-width: 90%;
-    padding: 10px;
+    padding: 5px;
   }
-  footer .column {
-    font-family: sans-serif;
-    color: black;
-    display: flex;
-    justify-content: space-around;
-    box-direction:initial;
-    width: 30%;
-    float: left;
-    text-decoration: none;
-    background-color: rgba(254,217,201,1.00);
+  
     
   }
-.column {
-text-decoration: none;
+footer .column {
+display: flex;
+font-family: sans-serif;
+color: black;
+display: flex;
+background-color: rgba(254,217,201,1.00);
+  
 
 }
 ul li {
 
     text-decoration: none;
     list-style-type: none;
+    width: 6rem;
+    height: 50px;
 }
  
 a:hover {
@@ -217,4 +217,7 @@ input[type=text] {
   font-size: 1.6;
   font-weight: 500;
     
+}
+#special_3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
 }
