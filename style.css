@@ -15,7 +15,7 @@ Include all of the typical stuff that you’ll find on the home page of a busine
 * {
     font-family: sans-serif;
     line-height: 1.6rem;
-    background-color: rgba(254,217,201,1.00);
+    background-color: rgba(254,217,201,100);
   }
   
   body {
@@ -35,8 +35,8 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     width: 100%;
     font-family: 'pacifico', cursive;
     padding-left: 2rem;
-    color: rgba(226,101,101,100);
-    font-size: 2rem;
+    color: rgba(187,72,70.100);
+    font-size: 3rem;
     font-weight: 700;
   }
   
@@ -44,7 +44,7 @@ h2 {
 
   font-family: 'pacifico', cursive;
   font-size: 2rem;
-  color: salmon;
+  color:rgb(187,72,70.100);
   font-weight: 900;
 }
 
@@ -124,7 +124,7 @@ h2 {
     white-space: nowrap;
     padding: 0.25rem;
     text-align: right;
-   font-family: Arial, Helvetica, sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
   }
 
   
@@ -249,7 +249,7 @@ hr.new1 {
   width:100px;
   margin: 20px;
   padding: 10px;
-  border:1px solid salmon;
+  border:1px solid black;
 }
 
 .product-items2 {
@@ -264,7 +264,17 @@ hr.new1 {
   width:200px;
   margin: 20px;
   padding: 10px;
-  border-right:1px 20% solid black;
+  border:1px solid black;
+}
+
+.product-items3 {
+  margin-bottom: 40px;
+  
+}
+
+.product-items3 > div{
+  margin-bottom: 40px;
+  border: 1px solid black;
 }
 
 .side-by-side { 
@@ -276,11 +286,10 @@ margin: 30px;
 }
 
 .side-by-side > div {
-
   padding: 10px;
   border: 10px;
+    
 } 
-
 
 
 footer {
@@ -291,8 +300,6 @@ footer {
   width: 100%;
   margin-left: 2rem;
 }
-
-
 
 
 .footer-container {
