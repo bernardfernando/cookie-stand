@@ -21,3 +21,22 @@ Anything else you’d like to add related to style. But remember: simplicity, cl
 Be thoughtful about layout and overall organization of the page.
 Run a Lighthouse Accessibility report. In this module, push to achieve a score between 65-80. Add the screenshot of your score to your README.md.
 Include all of the typical stuff that you’ll find on the home page of a business: locations, hours, contact information, some text about how awesome the business is, etc. Be creative, and again, think about what is meaningful to a typical end user. 
+
+# Light house analysis
+Made amends based on the results
+1. Image sizes were fixed
+2. Some images were made smaller to accommodate small screens
+3. Accessibility improved
+4. Flex restrictions width/height restrictions were released
+5. *** Google font Pacifico needs CSS for it to perform well.  H1 in index.html is ok, but sales.html it is only a cursive font [did not attempt it]
+![image](https://github.com/bernardfernando/cookie-stand/assets/135609352/cb9dc662-0a7a-4deb-91a8-abb07b4b4d63)
+
+
+![image](https://github.com/bernardfernando/cookie-stand/assets/135609352/c496195f-7c3b-4706-85ad-dcaac05140a8)
+
+
+![image](https://github.com/bernardfernando/cookie-stand/assets/135609352/a0cb446a-a1e0-4755-b398-1e49fca42c79)
+
+
+
+
