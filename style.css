@@ -24,18 +24,28 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     line-height: 1.6;
     letter-spacing: 0.01em;
     color: black;
+    width: 90%;
 
 
   }
   
   header h1 {
-    margin-bottom: 0;
-    width: 90%;
+    margin-bottom: 1rem;
+    width: 100%;
     font-family: 'pacifico', cursive;
     padding-left: 2rem;
     color: rgba(226,101,101,100);
+    font-size: 3rem;
+    font-weight: 700;
   }
   
+h2 {
+
+  font-family: 'pacifico', cursive;
+  font-size: 2rem;
+  color: salmon;
+  font-weight: 700;
+}
 
 
   img {
@@ -44,27 +54,26 @@ Include all of the typical stuff that you’ll find on the home page of a busine
   
   .container_common1{
   width: 90%;
-  max-width: 960px;
-  margin: 0 auto;
+  margin: 1rem auto;
+  }
   
-  
-    }
-  
-    .container_header{
+  .container_header{
     display: flex;
     justify-content: space-between;
     align-items: centre;
-    padding:0rem;
+    padding:01rem;
+     
   }
   
   main {
-    margin: 1rem;
+    margin-top: 3rem;
     
   }
   
   .container_main {
   
     align-items: center;
+    width: 80%;
   }
 
   
@@ -107,11 +116,11 @@ Include all of the typical stuff that you’ll find on the home page of a busine
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  color: salmon;
   
   }
-  h3 {
-    font-size: 2rem;
-    font-weight: 600;
+  
+  
   }
   
   .text_on_right p {
@@ -169,21 +178,7 @@ Include all of the typical stuff that you’ll find on the home page of a busine
 
     font-size: 1.6rem;
   }
-  footer {
-    min-height: 200px;
-    background-color: rgba(254,217,201,1.00);
-    max-width: 90%;
-    padding: 5px;
-  }
-  
-    
-  }
-footer .column {
-display: flex;
-font-family: sans-serif;
-color: black;
-display: flex;
-background-color: rgba(254,217,201,1.00);
+ 
   
 
 }
@@ -220,4 +215,130 @@ input[type=text] {
 }
 #special_3 {
   font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+.horizontal_img1 {
+  display: flex;
+  flex-direction: row;
+  margin-right: 1rem;
+}
+
+p {
+  margin-top: 0%;
+}
+
+.text_r_image {
+  border: 1px solid salmon;
+  padding: 1rem;
+  
+}
+
+.products ul li {
+  display:flex;
+  justify-content: space-around;
+  flex-direction:column;
+
+}
+
+hr.new1 {
+  margin-left: 0%;
+  size: 1px;
+  border-top:1px solid salmon;
+  
+}
+
+.product-items {
+  display: flex;
+  height: 200px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-bottom: 40px;
+  
+}
+
+.product-items > div {
+  background-color:rgb(166,124,0);
+  width:100px;
+  margin: 20px;
+  padding: 10px;
+  border:1px solid salmon;
+}
+
+.product-items2 {
+  display: flex;
+  height: 300px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-bottom: 40px;
+}
+
+.product-items2 > div {
+  background-color: salmon;
+  width:200px;
+  margin: 20px;
+  padding: 10px;
+  border-right:1px 20% solid black;
+}
+
+.side-by-side {
+display: flex;
+flex-direction: row;
+padding: 10px;
+margin: 30px;
+
+}
+
+.side-by-side > div {
+
+  padding: 10px;
+  border: 10px;
+}
+
+
+
+footer {
+  min-height: 200px;
+  background-color: rgba(254,217,201,1.00);
+  max-width: 90%;
+  padding: 5px; 
+  width: 100%;
+  margin-left: 2rem;
+}
+
+
+
+
+.footer-container {
+  display: flex;
+  height: 160px;
+  flex-wrap: wrap;
+  align-content: space-between;
+  margin-bottom: 40px;
+  justify-content: center;
+}
+
+.footer-container > div {
+  width:170px;
+  margin: 6px;
+  padding: 10px;
+  border-right:1px solid salmon;
+  font-size:1rem;
+
+}
+
+.opening-hours p {
+  margin: 30px;
+}
+
+.opening-locations {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  
+}
+
+.opening-location > div {
+  padding: 30px;
+  margin-left: 1rem;
 }
