@@ -121,14 +121,6 @@ h2 {
   
   }
   
-  
-  }
-  
-  .text_on_right p {
-    max-height: 400px;
-    overflow-y: scroll;
-  }
-
   table, th, tr, td {
     border: 1px solid salmon;
     border-collapse: collapse;
@@ -180,9 +172,6 @@ h2 {
     font-size: 1.6rem;
   }
  
-  
-
-}
 ul li {
 
     text-decoration: none;
@@ -222,6 +211,7 @@ input[type=text] {
   display: flex;
   flex-direction: row;
   margin-right: 1rem;
+  margin-right: 10px;
 }
 
 p {
@@ -231,6 +221,7 @@ p {
 .text_r_image {
   border: 1px solid salmon;
   padding: 1rem;
+  margin-left: 10px;
   
 }
 
