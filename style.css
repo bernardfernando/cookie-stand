@@ -19,6 +19,7 @@ Include all of the typical stuff that you’ll find on the home page of a busine
   }
   
   body {
+    width: 90%;
     font-size: 1rem;
     font-weight: 400;
     line-height: 1.6;
@@ -318,7 +319,7 @@ footer {
 }
 
 .footer-container > div {
-  width:170px;
+  width:150px;
   margin: 6px;
   padding: 10px;
   border-right:1px solid salmon;
