@@ -36,7 +36,7 @@ Include all of the typical stuff that you’ll find on the home page of a busine
     font-family: 'pacifico', cursive;
     padding-left: 2rem;
     color: rgba(226,101,101,100);
-    font-size: 3rem;
+    font-size: 2rem;
     font-weight: 700;
   }
   
@@ -63,9 +63,15 @@ h2 {
     justify-content: space-between;
     align-items: centre;
     padding:01rem;
+    margin-left: 2rem;
      
   }
-  
+
+ header .header-image2 {
+  margin-left: 4rem;
+  padding-left: 20px;
+}
+
   main {
     margin-top: 3rem;
     
@@ -97,16 +103,7 @@ h2 {
     text-decoration: none;
     color: inherit;
   }
-  
-  .horizontal_3_images {
-      display: flex;
-      justify-content: space-between;
-      margin-bottom: 1rem ;
-      margin-top:1rem;
     
-    }
-  
-  
   .image_text_sidebyside {
   display: flex;
   gap: 1rem;
@@ -241,7 +238,6 @@ hr.new1 {
 
 .product-items {
   display: flex;
-  height: 200px;
   flex-wrap: wrap;
   align-content: space-between;
   margin-bottom: 40px;
@@ -258,7 +254,6 @@ hr.new1 {
 
 .product-items2 {
   display: flex;
-  height: 300px;
   flex-wrap: wrap;
   align-content: space-between;
   margin-bottom: 40px;
@@ -272,7 +267,7 @@ hr.new1 {
   border-right:1px 20% solid black;
 }
 
-.side-by-side {
+.side-by-side { 
 display: flex;
 flex-direction: row;
 padding: 10px;
@@ -284,7 +279,7 @@ margin: 30px;
 
   padding: 10px;
   border: 10px;
-}
+} 
 
 
 
@@ -302,7 +297,6 @@ footer {
 
 .footer-container {
   display: flex;
-  height: 160px;
   flex-wrap: wrap;
   align-content: space-between;
   margin-bottom: 40px;
